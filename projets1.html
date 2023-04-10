@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="projet1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="projet1.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+          <div class="content1">
+                <div>
+                    <span>To Do List</span>
+                    <button onclick="refresh()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/><path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/></svg></button>
+                </div>
+                <span class="date" id="date"><script>dater()</script></span>
+          </div>
+          <div class="content2">
+                <div class="content2-tache" id="ajouter">
+        
+                </div>
+                <form class="form" onsubmit="return false;">
+                    <button onclick="ajouter()">+</button>
+                    <input type="text" placeholder="A Faire" id="input">
+                </form>
+          </div>
+    </div>
+</body>
+</html>
